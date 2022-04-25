@@ -1,0 +1,100 @@
+/*************** Section Principale **************/
+
+/* All the styles and effects in common for the titles 
+and cards contained in stays, popular and activities */
+
+.main {
+  justify-content: space-between;
+}
+
+.main li {
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+
+.main li:hover {
+  transform: scale(1.05);
+}
+
+.main h2,
+#activities h2 {
+  font-size: 20px;
+  margin: 40px 0 20px 40px;
+}
+
+.main h4 {
+  margin: 40px 0 20px 40px;
+}
+
+.main ul {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  row-gap: 30px;
+}
+
+.main h3,
+#activities h3,
+.main p,
+.mark {
+  margin: 0 0 5px 10px;
+}
+
+.main h3,
+#activities h3 {
+  font-size: 16px;
+}
+
+.main p {
+  font-size: 14px;
+}
+
+.main span {
+  font-weight: bold;
+}
+
+.main i {
+  font-size: 12px;
+}
+
+/* Style for the marking system */
+
+.mark .blue {
+  color: var(--color-blue);
+}
+
+.mark .grey {
+  color: rgba(128, 128, 128, 0.527);
+}
+
+.not-blue {
+  color: var(--color-lightblue);
+}
+
+/********* Media Queries *******/
+
+/**** For Tablets ****/
+
+@media screen and (max-width: 1170px) {
+  /* change the display of popular and stays section */
+
+  .main {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+}
+
+/***** For mobile phones *****/
+
+/* change margins essentially */
+
+@media screen and (max-width: 768px) {
+  .filters,
+  .info,
+  #activities {
+    margin: 20px 7%;
+  }
+
+  .main {
+    margin: 20px 0;
+  }
+}

@@ -1,0 +1,53 @@
+/*************** General Settings **************/
+
+/****** Fonts ******/
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&display=swap");
+
+/****** Colors ******/
+
+:root {
+  --color-blue: #0065fc;
+  --color-lightblue: #deebff;
+  --color-grey: #f2f2f2;
+}
+
+/*** Flex Class ****/
+
+.flex {
+  display: flex;
+}
+
+/***** General CSS ******/
+
+html {
+  max-width: 1450px;
+  margin: auto;
+  border-left: 1px solid var(--color-lightblue);
+  border-right: 1px solid var(--color-lightblue);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+header {
+  margin-left: 80px;
+}
+
+.form,
+.filters,
+.info,
+.main,
+#activities {
+  margin: 0px 80px;
+}

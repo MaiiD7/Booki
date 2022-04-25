@@ -1,0 +1,48 @@
+/****************** Footer *****************/
+
+/* It is div containing three lists with the same style */
+
+footer {
+  background-color: var(--color-grey);
+  padding: 40px 0;
+}
+
+#footer-lists {
+  width: 80%;
+  justify-content: space-around;
+}
+
+#footer-lists h4 {
+  font-size: 15px;
+}
+#footer-lists li {
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+/********* Media Queries ***********/
+
+/***** For mobile phones *****/
+
+@media screen and (max-width: 768px) {
+  /* To change direction and size*/
+
+  #footer-lists {
+    flex-direction: column;
+    margin-left: 5%;
+    gap: 25px;
+  }
+
+  #footer-lists h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  #footer-lists ul {
+    margin-bottom: 10px;
+  }
+
+  #footer-lists li {
+    font-size: 16px;
+  }
+}

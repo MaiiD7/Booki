@@ -1,0 +1,107 @@
+/********** Filters *************/
+
+/* Display of the section */
+
+.filters {
+  margin-bottom: 40px;
+}
+
+.list-filters {
+  flex-wrap: wrap;
+  width: 800px;
+  justify-content: space-around;
+}
+
+h4 {
+  align-self: center;
+  margin-right: 15px;
+}
+
+/* The style for the button, applied to all of them */
+
+.btn {
+  height: 40px;
+  align-items: center;
+  border: 1px solid var(--color-lightblue);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  background-color: var(--color-blue);
+  color: white;
+}
+
+.btn:hover i {
+  transform: scale(1.2);
+}
+
+.icon-container {
+  height: 40px;
+  width: 40px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-lightblue);
+  border-radius: 50%;
+}
+
+.btn i {
+  color: var(--color-blue);
+  transition: 0.5s;
+}
+
+.btn p {
+  font-weight: bold;
+  padding: 0 15px;
+}
+
+/********** Info **********/
+
+/* Style for the info icon and text */
+.info {
+  margin-bottom: 40px;
+}
+
+#info-icon {
+  height: 25px;
+  width: 25px;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--color-lightblue);
+  border-radius: 120%;
+}
+
+#info-icon i {
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--color-blue);
+}
+
+.info p {
+  margin-left: 15px;
+  line-height: 25px;
+}
+
+/********* Media Queries *******/
+
+/**** For Tablets ****/
+
+@media screen and (max-width: 1170px) {
+  .list-filters {
+    justify-content: flex-start;
+    width: 100%;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .filters {
+    flex-direction: column;
+  }
+
+  .filters h4 {
+    align-self: flex-start;
+    margin-bottom: 20px;
+  }
+}
